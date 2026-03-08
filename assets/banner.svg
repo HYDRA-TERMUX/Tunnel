@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#030f03;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#051a05;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#030f03;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#00ff41;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#00ff41;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff41;stop-opacity:0" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="900" height="4" patternUnits="userSpaceOnUse">
+      <rect width="900" height="1" fill="rgba(0,255,65,0.03)"/>
+      <rect y="2" width="900" height="1" fill="rgba(0,0,0,0.1)"/>
+    </pattern>
+    <!-- Matrix rain characters -->
+    <clipPath id="clip">
+      <rect width="900" height="280"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="280" fill="url(#bgGrad)"/>
+
+  <!-- Matrix rain columns (background effect) -->
+  <g clip-path="url(#clip)" opacity="0.12" font-family="monospace" font-size="12" fill="#00ff41">
+    <!-- Column 1 -->
+    <text x="15" y="0"><animate attributeName="y" from="-200" to="320" dur="3.1s" repeatCount="indefinite"/>1</text>
+    <text x="15" y="16"><animate attributeName="y" from="-184" to="336" dur="3.1s" repeatCount="indefinite"/>0</text>
+    <text x="15" y="32"><animate attributeName="y" from="-168" to="352" dur="3.1s" repeatCount="indefinite"/>1</text>
+    <!-- Column 2 -->
+    <text x="40" y="0"><animate attributeName="y" from="-200" to="320" dur="2.7s" repeatCount="indefinite" begin="0.5s"/>0</text>
+    <text x="40" y="16"><animate attributeName="y" from="-184" to="336" dur="2.7s" repeatCount="indefinite" begin="0.5s"/>1</text>
+    <!-- Column 3 -->
+    <text x="855" y="0"><animate attributeName="y" from="-200" to="320" dur="3.4s" repeatCount="indefinite" begin="1s"/>1</text>
+    <text x="855" y="16"><animate attributeName="y" from="-184" to="336" dur="3.4s" repeatCount="indefinite" begin="1s"/>0</text>
+    <!-- Column 4 -->
+    <text x="870" y="0"><animate attributeName="y" from="-200" to="320" dur="2.9s" repeatCount="indefinite" begin="0.2s"/>0</text>
+    <text x="870" y="16"><animate attributeName="y" from="-184" to="336" dur="2.9s" repeatCount="indefinite" begin="0.2s"/>1</text>
+    <!-- Column 5 -->
+    <text x="60" y="0"><animate attributeName="y" from="-200" to="320" dur="4.1s" repeatCount="indefinite" begin="1.5s"/>T</text>
+    <text x="60" y="16"><animate attributeName="y" from="-184" to="336" dur="4.1s" repeatCount="indefinite" begin="1.5s"/>U</text>
+    <text x="60" y="32"><animate attributeName="y" from="-168" to="352" dur="4.1s" repeatCount="indefinite" begin="1.5s"/>N</text>
+    <!-- Column 6 -->
+    <text x="835" y="0"><animate attributeName="y" from="-200" to="320" dur="3.8s" repeatCount="indefinite" begin="0.8s"/>N</text>
+    <text x="835" y="16"><animate attributeName="y" from="-184" to="336" dur="3.8s" repeatCount="indefinite" begin="0.8s"/>E</text>
+    <text x="835" y="32"><animate attributeName="y" from="-168" to="352" dur="3.8s" repeatCount="indefinite" begin="0.8s"/>L</text>
+  </g>
+
+  <!-- Top border line animated -->
+  <rect x="0" y="0" width="900" height="2" fill="url(#greenGrad)">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Bottom border line animated -->
+  <rect x="0" y="278" width="900" height="2" fill="url(#greenGrad)">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Corner brackets -->
+  <g fill="none" stroke="#00ff41" stroke-width="2" opacity="0.7">
+    <!-- Top-left -->
+    <polyline points="10,30 10,10 30,10"/>
+    <!-- Top-right -->
+    <polyline points="870,10 890,10 890,30"/>
+    <!-- Bottom-left -->
+    <polyline points="10,250 10,270 30,270"/>
+    <!-- Bottom-right -->
+    <polyline points="870,270 890,270 890,250"/>
+  </g>
+
+  <!-- ASCII Art Logo -->
+  <g font-family="'Courier New', Courier, monospace" font-size="13.5" fill="#00ff41" filter="url(#glow)" font-weight="bold">
+    <text x="50" y="68" opacity="0">
+      ████████╗██╗   ██╗███╗  ██╗███╗  ██╗███████╗██╗     
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1;0.2;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="50" y="84" opacity="0">
+      ╚══██╔══╝██║   ██║████╗ ██║████╗ ██║██╔════╝██║     
+      <animate attributeName="opacity" values="0;0;0;1;1" keyTimes="0;0.1;0.2;0.3;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="50" y="100" opacity="0">
+         ██║   ██║   ██║██╔██╗██║██╔██╗██║█████╗  ██║     
+      <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.1;0.2;0.3;0.4;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="50" y="116" opacity="0">
+         ██║   ██║   ██║██║╚████║██║╚████║██╔══╝  ██║     
+      <animate attributeName="opacity" values="0;0;0;0;0;1;1" keyTimes="0;0.1;0.2;0.3;0.4;0.55;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="50" y="132" opacity="0">
+         ██║   ╚██████╔╝██║ ╚███║██║ ╚███║███████╗███████╗
+      <animate attributeName="opacity" values="0;0;0;0;0;0;1;1" keyTimes="0;0.1;0.2;0.3;0.4;0.55;0.7;1" dur="3s" fill="freeze"/>
+    </text>
+    <text x="50" y="148" opacity="0">
+         ╚═╝    ╚═════╝ ╚═╝  ╚══╝╚═╝  ╚══╝╚══════╝╚══════╝
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;1;1" keyTimes="0;0.1;0.2;0.3;0.4;0.55;0.7;0.85;1" dur="3s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- Divider line under ASCII art -->
+  <rect x="50" y="162" width="800" height="1.5" fill="url(#greenGrad)" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;1" keyTimes="0;0.7;0.85;1" dur="3s" fill="freeze"/>
+  </rect>
+
+  <!-- Subtitle line -->
+  <text x="450" y="190" font-family="'Courier New', Courier, monospace" font-size="14" fill="#00ccff"
+        text-anchor="middle" letter-spacing="4" opacity="0" filter="url(#glow)">
+    CODED BY  HYDRA TERMUX  •  v1.0.0
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.8;1" dur="3.5s" fill="freeze"/>
+  </text>
+
+  <!-- Tag line -->
+  <text x="450" y="220" font-family="'Courier New', Courier, monospace" font-size="11" fill="#888888"
+        text-anchor="middle" letter-spacing="2" opacity="0">
+    Cloudflare Tunnel Tool  •  No Config  •  No Port Forwarding
+    <animate attributeName="opacity" values="0;0;0;1" keyTimes="0;0.8;0.9;1" dur="4s" fill="freeze"/>
+  </text>
+
+  <!-- Bottom badges -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.85;1" dur="4s" fill="freeze"/>
+    <!-- Badge: Termux -->
+    <rect x="270" y="238" width="90" height="22" rx="4" fill="#1a1a1a" stroke="#00ff41" stroke-width="1"/>
+    <text x="315" y="253" font-family="monospace" font-size="10" fill="#00ff41" text-anchor="middle" letter-spacing="1">TERMUX</text>
+    <!-- Badge: Cloudflare -->
+    <rect x="375" y="238" width="110" height="22" rx="4" fill="#1a1a1a" stroke="#F48120" stroke-width="1"/>
+    <text x="430" y="253" font-family="monospace" font-size="10" fill="#F48120" text-anchor="middle" letter-spacing="1">CLOUDFLARE</text>
+    <!-- Badge: Linux -->
+    <rect x="500" y="238" width="80" height="22" rx="4" fill="#1a1a1a" stroke="#00ccff" stroke-width="1"/>
+    <text x="540" y="253" font-family="monospace" font-size="10" fill="#00ccff" text-anchor="middle" letter-spacing="1">LINUX</text>
+  </g>
+
+  <!-- Cursor blink -->
+  <rect x="826" y="136" width="8" height="15" fill="#00ff41">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Scanlines overlay -->
+  <rect width="900" height="280" fill="url(#scanlines)" opacity="0.6"/>
+
+  <!-- Vignette overlay -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" style="stop-color:transparent"/>
+    <stop offset="100%" style="stop-color:rgba(0,0,0,0.6)"/>
+  </radialGradient>
+  <rect width="900" height="280" fill="url(#vignette)"/>
+</svg>
