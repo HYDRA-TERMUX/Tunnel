@@ -319,15 +319,15 @@ Credits to HYDRA TERMUX must be maintained.
 
 ---
 
-## ⭐ Support the Project
+## ⭐ Star History
 
-<div align="center">
-
-If you found this useful, give it a **⭐ Star** — it keeps the project alive!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=hydratermux/tunnel&type=Date)](https://star-history.com/#hydratermux/tunnel&Date)
-
-</div>
+<a href="https://star-history.com/#HYDRA-TERMUX/Tunnel&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=HYDRA-TERMUX/Tunnel&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=HYDRA-TERMUX/Tunnel&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=HYDRA-TERMUX/Tunnel&type=Date" />
+ </picture>
+</a>
 
 ---
 
