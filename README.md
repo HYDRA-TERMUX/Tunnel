@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HEADER BANNER -->
-<img src="./assets/banner.svg" width="100%"/>
+<img src="./assets/tunnel_banner.jpg" width="100%"/>
 
 <br/>
 
