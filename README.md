@@ -13,7 +13,7 @@
 
 <!-- BADGES ROW 2 -->
 [![Stars](https://img.shields.io/github/stars/hydra-termux/tunnel?style=for-the-badge&logo=github&color=00ff41&labelColor=0d0d0d)](https://github.com/HYDRA-TERMUX/Tunnel/stargazers)
-[![Forks](https://img.shields.io/github/forks/hydratermux/tunnel?style=for-the-badge&logo=github&color=00bfff&labelColor=0d0d0d)](https://github.com/HYDRA-TERMUX/Tunnel/network/members)
+[![Forks](https://img.shields.io/github/forks/hydra-termux/tunnel?style=for-the-badge&logo=github&color=00bfff&labelColor=0d0d0d)](https://github.com/HYDRA-TERMUX/Tunnel/network/members)
 [![License](https://img.shields.io/badge/license-MIT-red?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-HYDRA%20TERMUX-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@hydratermux)
 
