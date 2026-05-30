@@ -41,7 +41,7 @@
 
 <div align="center">
 
-[![HYDRA TERMUX Tunnel Demo](https://img.youtube.com/vi/ZNbokMose27cywy2/maxresdefault.jpg)](https://youtube.com/@hydratermux?si=ZNbokMose27cywy2)
+[![HYDRA TERMUX Tunnel Demo](https://img.youtube.com/vi/ZNbokMose27cywy2/maxresdefault.jpg)](https://youtu.be/B3CH5j0LYJE)
 
 > 🎬 **Click the thumbnail above** to watch the full demo on YouTube  
 > 🔔 **Subscribe** to HYDRA TERMUX for more Termux & hacking tools
