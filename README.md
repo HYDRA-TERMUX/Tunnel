@@ -41,10 +41,6 @@
 
 <div align="center">
 
-## 📺 Video Demo
-
-<div align="center">
-
 [![HYDRA TERMUX Tunnel Demo](https://img.youtube.com/vi/B3CH5j0LYJE/maxresdefault.jpg)](https://youtu.be/B3CH5j0LYJE)
 
 
