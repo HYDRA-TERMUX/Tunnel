@@ -41,7 +41,8 @@
 
 <div align="center">
 
-[![HYDRA TERMUX Tunnel Demo](https://img.youtube.com/vi/B3CH5j0LYJE/maxresdefault.jpg)](https://youtu.be/B3CH5j0LYJE)
+[![HYDRA TERMUX Tunnel Demo](https://img.youtube.com/vi/B3CH5j0LYJE/hqdefault.jpg)](https://youtu.be/B3CH5j0LYJE)
+
 
 
 > 🎬 **Click the thumbnail above** to watch the full demo on YouTube  
